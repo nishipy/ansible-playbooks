@@ -1,0 +1,8 @@
+---
+- name: Print outer and inner items with role prefix
+  ansible.builtin.debug:
+    msg: "outer item={{ role_with_loop_var_outer_item }} inner item={{ item }}"
+  loop:
+    - a
+    - b
+    - c

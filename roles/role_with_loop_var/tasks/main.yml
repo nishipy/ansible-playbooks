@@ -1,0 +1,16 @@
+---
+- include_tasks: inner.yml
+  loop:
+    - 1
+    - 2
+    - 3
+  loop_control:
+    loop_var: role_with_loop_var_outer_item
+
+- include_tasks: inner_no_prefix.yml
+  loop:
+    - 1
+    - 2
+    - 3
+  loop_control:
+    loop_var: outer_item

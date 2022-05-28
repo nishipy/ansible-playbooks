@@ -1,0 +1,4 @@
+---
+- hosts: localhost
+  roles:
+    - ../roles/role_with_loop_var
